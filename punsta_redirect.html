@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PUNSTA — Enter PUNSTA 2.0</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .glossy-text {
+      font-weight: 800;
+      background: linear-gradient(90deg,#fff 0%, rgba(255,255,255,0.7) 5%, rgba(255,255,255,0.05) 40%, rgba(255,255,255,0.9) 70%, #fff 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      position: relative;
+    }
+    .shine {
+      position: absolute;
+      left: -50%;
+      top: 0;
+      height: 100%;
+      width: 50%;
+      transform: skewX(-20deg);
+      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.55) 50%, rgba(255,255,255,0) 100%);
+      animation: slide 3.5s linear infinite;
+      pointer-events: none;
+    }
+    @keyframes slide {
+      from { left: -50%; }
+      to   { left: 150%; }
+    }
+    .glass {
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(8px) saturate(120%);
+      -webkit-backdrop-filter: blur(8px) saturate(120%);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .soft-glow {
+      box-shadow: 0 8px 30px rgba(16,24,40,0.45), inset 0 1px 0 rgba(255,255,255,0.03);
+    }
+    .rank-1 { background: linear-gradient(90deg,#ffd166,#ffb703); }
+    .rank-2 { background: linear-gradient(90deg,#bde0fe,#80b3ff); }
+    .rank-3 { background: linear-gradient(90deg,#c8e6c9,#8bc34a); }
+    .glossy-btn{
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: .6rem 1.1rem;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: transform .18s ease, box-shadow .18s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .glossy-btn:hover{ transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0,0,0,0.45); }
+    .metaphor { font-style: italic; opacity: .8; }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-neutral-900 via-slate-900 to-indigo-900 text-white antialiased">
+  <div class="max-w-6xl mx-auto px-6 py-16">
+    <header class="flex items-center justify-between mb-12">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-pink-500 to-purple-600 flex items-center justify-center soft-glow">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+            <rect x="3" y="3" width="18" height="18" rx="4" fill="white" opacity="0.08"></rect>
+            <path d="M6 12c1.5-3 6-3 7.5 0 1.5-3 6-3 7.5 0" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+          </svg>
+        </div>
+        <div>
+          <div class="text-sm opacity-80">Welcome to</div>
+          <div class="text-2xl font-extrabold tracking-tight">PUNSTA</div>
+        </div>
+      </div>
+      <div class="flex gap-3 items-center">
+        <a href="https://s.punsta.com/" class="glossy-btn">Sign in</a>
+        <a href="https://s.punsta.com/" class="glossy-btn">Create</a>
+      </div>
+    </header>
+    <section class="grid md:grid-cols-2 gap-8 items-center">
+      <div class="relative">
+        <h1 class="text-5xl md:text-6xl leading-tight"> <span class="glossy-text text-transparent">Enter PUNSTA 2.0</span>
+          <span class="shine" aria-hidden></span>
+        </h1>
+        <p class="mt-4 text-lg max-w-xl metaphor">A glossy, metaphorical playground — where every post is a wink and every like is a nudge. Welcome to the new era of playful presence.</p>
+        <div class="mt-8 flex gap-4">
+          <a href="https://s.punsta.com/" class="glossy-btn">Explore</a>
+          <a href="https://s.punsta.com/" class="glossy-btn">Create account</a>
+        </div>
+      </div>
+      <aside class="space-y-4">
+        <div class="glass p-6 rounded-2xl soft-glow">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <div class="text-sm opacity-80">Most Popular Accounts</div>
+              <div class="text-xl font-bold">Top creators</div>
+            </div>
+            <a href="https://s.punsta.com/" class="glossy-btn">See all</a>
+          </div>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-4 p-3 rounded-xl glass">
+              <div class="w-12 h-12 rounded-lg flex items-center justify-center rank-1 text-black font-bold">#1</div>
+              <div class="flex-1">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <div class="font-semibold">admin</div>
+                    <div class="text-sm opacity-70">The original — keeping things neat</div>
+                  </div>
+                  <div class="text-right text-sm opacity-60">6 followers</div>
+                </div>
+              </div>
+            </li>
+            <li class="flex items-center gap-4 p-3 rounded-xl glass">
+              <div class="w-12 h-12 rounded-lg flex items-center justify-center rank-2 text-black font-bold">#2</div>
+              <div class="flex-1">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <div class="font-semibold">luluuu</div>
+                    <div class="text-sm opacity-70">Bringing the vibes</div>
+                  </div>
+                  <div class="text-right text-sm opacity-60">2 followers</div>
+                </div>
+              </div>
+            </li>
+            <li class="flex items-center gap-4 p-3 rounded-xl glass">
+              <div class="w-12 h-12 rounded-lg flex items-center justify-center rank-3 text-black font-bold">#3</div>
+              <div class="flex-1">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <div class="font-semibold">timwaltz</div>
+                    <div class="text-sm opacity-70">Quiet but steady</div>
+                  </div>
+                  <div class="text-right text-sm opacity-60">2 followers</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+    <footer class="mt-16 text-center opacity-70 text-sm">
+      Made with ✨ by the PUNSTA team — glossy metaphors included.
+    </footer>
+  </div>
+  <script>
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.shine').forEach(s => s.style.animation = 'none');
+    }
+  </script>
+</body>
+</html>
